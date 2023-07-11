@@ -6,9 +6,10 @@ for symbol in text:
             print(f"The symbol `{symbol}` is an even digit")
         else:
             print(f"The symbol `{symbol}` is an odd digit")
-    elif symbol.isupper():
-        print(f"The symbol `{symbol}` is an uppercase letter")
-    elif symbol.islower():
-        print(f"The symbol `{symbol}` is an lowercase letter")
+    elif symbol.isalpha():
+        if symbol.isupper():
+            print(f"The symbol `{symbol}` is an uppercase letter")
+        else:
+            print(f"The symbol `{symbol}` is an lowercase letter")
     else:
         print(f"The symbol `{symbol}` is neither a digit not or letter")
