@@ -7,7 +7,7 @@ delta = relativedelta(d2, d1)
 
 age_in_month = delta.years * 12 + delta.months
 
-age_in_years = int(age_in_month/12)
+age_in_years = int(age_in_month / 12)
 
 my_name = 'Oleh'
 
