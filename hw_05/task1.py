@@ -12,4 +12,4 @@ for symbol in text:
         else:
             print(f"The symbol `{symbol}` is an lowercase letter")
     else:
-        print(f"The symbol `{symbol}` is neither a digit not or letter")
+        print(f"The symbol `{symbol}` is neither a digit nor a letter")
