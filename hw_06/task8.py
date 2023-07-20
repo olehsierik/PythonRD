@@ -1,16 +1,13 @@
 def is_anagram(text_first, text_two):
     if len(text_first) != len(text_two):
-        return 'False'
+        return False
     if text_first == text_two:
-        return 'False'
+        return False
 
-    text_first = text_first.lower()
-    text_two = text_two.lower()
-    list_first = [char for char in text_first]
-    list_two = [char for char in text_two]
-    list_first.sort()
-    list_two.sort()
-    if list_first == list_two:
-        return 'True'
+    sorted_text1 = sorted(text_first)
+    sorted_text2 = sorted(text_two)
+
+    if sorted_text1 == sorted_text2:
+        return True
     else:
-        return 'False'
+        return False

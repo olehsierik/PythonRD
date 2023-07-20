@@ -1,13 +1,8 @@
 def is_prime(number):
-    number_divisors = 2
     if number > 1:
-        for i in range(1, int(number * 0.5)):
-            i += 1
+        for i in range(2, int(number * 0.5)):
             if number % i == 0:
-                number_divisors += 1
-                if number_divisors > 2:
-                    return 'False'
+                return False
+        return True
     else:
-        return 'False'
-    if number_divisors == 2:
-        return 'True'
+        return False
