@@ -2,9 +2,6 @@
 
 
 def is_in_list(lst, value):
-    if value in lst:
-        return True
-    else:
-        return False
+    return value in lst
 
 # print(is_in_list(my_list,78))
