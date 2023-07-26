@@ -2,7 +2,7 @@
 
 
 def add_to_list_index(lst, value, index=None):
-    if index == None:
+    if index is None:
         lst.append(value)
     else:
         lst.insert(index, value)
