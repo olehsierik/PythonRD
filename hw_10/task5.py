@@ -1,20 +1,20 @@
-# my_text = 'THIS IS some Text. And this text, is just an EXAMPLE! trust me?'
+my_text = 'THIS IS some Text. And this text, is just an EXAMPLE! trust me'
 
 
-def normalize_text(text: str):
+def normalize_text(text):
     import re
 
-    denormalize_list = re.split('([.!?])', my_text)
-    normalized_list = []
+    denormalize_list = re.split(r'(?<=[.!?])', text)
+    normalized_list = [item.strip().capitalize() for item in denormalize_list]
+    print(normalized_list)
+    print()
 
-    for item in denormalize_list:
-        item = item.strip().capitalize()
-        if item in ['.', '!', '?']:
-            item += ' '
-        normalized_list.append(item)
-
-    normalized_text = ''.join(normalized_list)
+    if normalized_list[-1] == '':
+            normalized_text = ' '.join(normalized_list)[:-1]
+    else:
+        normalized_text = ' '.join(normalized_list)
 
     return normalized_text
 
-# print(normalize_text(my_text))
+
+print(normalize_text(my_text))

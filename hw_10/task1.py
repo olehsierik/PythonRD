@@ -7,7 +7,7 @@ def add_to_dict(dct: dict, key, value):
 
 
 def remove_from_dict(dct: dict, key):
-    dct.pop(key)
+    dct.pop(key,None)
 
 
 def value_by_key(dct: dict, key):
