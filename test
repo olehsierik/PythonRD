@@ -1,0 +1,13 @@
+{
+   "firstName": "Oleh",
+   "lastName": "Sierik",
+   "address": {
+       "streetAddress": "Kyiv",
+       "city": "Kyiv",
+       "postalCode": 21000
+   },
+   "phoneNumbers": [
+       "044 123-1234",
+       "050 123-4567"
+   ]
+}
