@@ -4,7 +4,7 @@ my_text = 'THIS IS some Text. And this text, is just an EXAMPLE! trust me'
 def normalize_text(text):
     import re
 
-    denormalize_list = re.split(r'(?<=[.!?])', text)
+    denormalize_list = re.split(r'(?<=[.!? ])', text)
     normalized_list = [item.strip().capitalize() for item in denormalize_list]
     print(normalized_list)
     print()
