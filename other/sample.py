@@ -1,7 +1,10 @@
-a = 'some text'
-lst = ['asd', '1', [12, 45]]
-print(len(a))
-print(len(lst))
+import re
 
+pattern = r'^(?=.*foo)(?=.*bar)'
+text1 = "This is foo and that is bar."
+text2 = "This is bar and that is foo."
 
-print (pow(2,4))
+if re.search(pattern, text1):
+    print("text1 matches!")
+if re.search(pattern, text1):
+    print("text1 matches!")
