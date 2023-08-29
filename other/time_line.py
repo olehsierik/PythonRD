@@ -1,7 +1,11 @@
+import numpy
+import pandas
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from datetime import datetime, timedelta
+
+
 
 # Завантажуємо дані з Excel-файлу
 data = pd.read_excel("C:\\ALL\\time_line.xlsx")
