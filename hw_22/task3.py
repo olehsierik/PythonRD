@@ -1,8 +1,7 @@
 def create_class(class_name: str, *args, **kwargs):
-    class_base: tuple = tuple([item for item in args])
-    print(class_base)
+    return type(class_name, args, kwargs)
 
-    attribute: dict = {key: value for key, value in kwargs.items()}
-    print(attribute)
 
-    return type(class_name, class_base, attribute)
+new_class = create_class('String', str, some='1')
+
+print(new_class)

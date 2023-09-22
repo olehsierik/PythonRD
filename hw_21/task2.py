@@ -15,7 +15,7 @@ class User:
         child_first_name = random.choice(string.ascii_uppercase) + "".join(
             random.choices(string.ascii_lowercase, k=random.randint(1, 9)))
 
-        if self.age == other.age or self.age > other.age:
+        if self.age >= other.age or self.age > other.age:
             child_last_name = self.last_name
         else:
             child_last_name = other.last_name
