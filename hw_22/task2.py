@@ -2,7 +2,7 @@ import abc
 
 
 class Animal(abc.ABC):
-    Voice: str = None
+    voice: str = None
 
     @abc.abstractmethod
     def speak(self) -> str:
@@ -10,21 +10,21 @@ class Animal(abc.ABC):
 
 
 class Dog(Animal):
-    Voice: str = 'Woof'
+    voice: str = 'Woof'
 
     def speak(self) -> str:
-        return self.Voice
+        return self.voice
 
 
 class Cat(Animal):
-    Voice: str = 'Meow'
+    voice: str = 'Meow'
 
     def speak(self) -> str:
-        return self.Voice
+        return self.voice
 
 
 class Horse(Animal):
-    Voice: str = 'Neigh'
+    voice: str = 'Neigh'
 
     def speak(self) -> str:
-        return self.Voice
+        return self.voice
